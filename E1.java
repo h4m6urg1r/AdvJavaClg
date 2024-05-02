@@ -24,11 +24,9 @@ class RandomNumberGenerator extends Thread {
 
 class SquareThread extends Thread {
 	private int num;
-
 	public SquareThread(int num) {
 		this.num = num;
 	}
-
 	public void run() {
 		int square = num * num;
 		System.out.println("Square of " + num + " is: " + square);
@@ -37,11 +35,9 @@ class SquareThread extends Thread {
 
 class CubeThread extends Thread {
 	private int num;
-
 	public CubeThread(int num) {
 		this.num = num;
 	}
-
 	public void run() {
 		int cube = num * num * num;
 		System.out.println("Cube of " + num + " is: " + cube);
