@@ -2,9 +2,9 @@ import java.util.Random;
 
 class RandomNumberGenerator extends Thread {
 	public void run() {
-		Random rand = new Random();
+		Random r = new Random();
 		while (true) {
-			int num = rand.nextInt(100);
+			int num = r.nextInt(100);
 			System.out.println("Generated number: " + num);
 			try {
 				Thread.sleep(1000);
